@@ -1,0 +1,6 @@
+pages:
+  - name: Home
+    link: /
+
+  - name: About
+    link: /about
