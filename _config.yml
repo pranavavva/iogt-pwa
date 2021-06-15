@@ -8,6 +8,9 @@ description: >-
 
 author: "UNICEF IoGT"
 
+sass:
+  sass_dir: assets/css
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
