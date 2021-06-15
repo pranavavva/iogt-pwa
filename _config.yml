@@ -9,7 +9,7 @@ description: >-
 author: "UNICEF IoGT"
 
 sass:
-  sass_dir: assets/css
+  sass_dir: _sass
 
 plugins:
   - jekyll-seo-tag
