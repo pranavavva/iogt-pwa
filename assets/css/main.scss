@@ -13,9 +13,23 @@ body {
   font-family: $bodyFont;
 }
 
+section.container {
+  max-width: 865px;
+}
+
+section > div.container {
+  max-width: 865px;
+}
+
 .section {
   padding-top: 54px;
   margin-top: -54px;
+}
+
+.iogt-logo {
+  width: 40vw;
+  height: auto;
+  padding-bottom: 50vh;
 }
 
 .bg-image-kids {
@@ -27,8 +41,16 @@ body {
   background-repeat: no-repeat no-repeat;
 }
 
-.iogt-logo {
-  width: 40vw;
-  height: auto;
-  padding-bottom: 50vh;
+.rev-text {
+  @extend .lead;
+  font-size: 1rem;
+}
+
+.bg-image-family-candle {
+  background-size: cover;
+  background-color: #fff;
+  background-image: url({{ "/assets/img/familyCandle.jpg" | relative_url }});
+  background-position: 50% 50%;
+  height: 75vh;
+  background-repeat: no-repeat no-repeat;
 }

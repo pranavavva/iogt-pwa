@@ -8,10 +8,10 @@ layout: default
 </section>
 
 <!-- Intro video-->
-<section class="container text-center pt-5 pb-5">
-    <h2 id="video">IoGT Introductory Video</h2>
-    <p class="lead pt-3">Our mission explained in 2 minutes.</p>
-    <div class="embed-responsive embed-responsive-16by9">
+<section class="container pt-5 pb-5">
+    <h2 id="video" class="display-5 text-center">IoGT Introductory Video</h2>
+    <p class="lead pt-3 text-center">Our mission explained in 2 minutes.</p>
+    <div class="ratio ratio-16x9 text-center">
         <iframe width="844" height="475"
                 src="https://www.youtube.com/embed/0kuZ4mCHwdE"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -20,15 +20,42 @@ layout: default
 </section>
 
 <!-- A revolution -->
-<section class="container text-center pt-5 pb-5">
-    <h2 id="revolution">A Revolution in Information</h2>
-    <div class="d-flex pt-5">
-        <img src="{{ "/assets/img/feature_phone1.png" | relative_url }}"
-             alt="Set of three feature phones demonstrating IoGT appearance" class="mr-3" width="574" height="auto">
-        <div class="media-body">
-            Internet of Good Things (IoGT) hosts mobile-packaged content designed to make life-saving and life-improving
-            information available for free, even on low end devices. IoGT is helping communities and frontline workers
-            access educational and lifesaving information at the point of care.
+<section class="container pt-5 pb-5">
+    <h2 id="revolution" class="display-5 text-center">A Revolution in Information</h2>
+
+    <div class="row pb-5">
+        <div class="col col-lg-8">
+            <img src="{{ "/assets/img/feature_phone1.png" | relative_url }}"
+                 alt="Set of three feature phones demonstrating IoGT appearance" class="img-fluid">
         </div>
+        <div class="col-lg-4 align-self-center">
+            <p class="rev-text">Internet of Good Things (IoGT) hosts mobile-packaged content designed to make life-saving
+                and life-improving information available for free, even on low end devices. IoGT is helping communities
+                and frontline workers access educational and lifesaving information at the point of care.</p>
+        </div>
+    </div>
+
+    <div class="row pt-5">
+        <div class="col col-lg-8">
+            <img src="{{ "/assets/img/feature_phone2.png" | relative_url }}"
+                 alt="Set of three feature phones demonstrating IoGT appearance" class="img-fluid">
+        </div>
+        <div class="col-lg-4 align-self-center">
+            <p class="rev-text">Topics and issues on Internet of Good Things include maternal health, hygiene, emergency
+                information on diseases such as Yellow fever, Polio and Cholera, HIV and sexual health advice for
+                adolescents, Internet safety, positive parenting techniques and more. Including multimedia elements
+                and 2-way communication features, the IoGT platform can also be used to capture feedback and local
+                best practices from communities through polls and survey functionalities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Family with candle -->
+<section class="d-flex pb-5 pt-5 bg-image-family-candle">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <img src="{{ "/assets/img/Iogt_icon_transparent.png" | relative_url }}" alt="Transparent IoGT icon" class="img-fluid">
+        <p class="text-light lead text-center fs-2 fw-normal">By connecting to Internet of Good Things, children, adolescents, mothers, fathers, other
+            family members, health trainers, caregivers, and communities can gain access to localized, updated, quality
+            content directly on their mobile phone at anytime for free.</p>
     </div>
 </section>
