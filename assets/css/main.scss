@@ -13,11 +13,7 @@ body {
   font-family: $bodyFont;
 }
 
-section.container {
-  max-width: 865px;
-}
-
-section > div.container {
+.container:not(nav div.container) {
   max-width: 865px;
 }
 
@@ -62,4 +58,8 @@ section > div.container {
   background-position: 50% 50%;
   height: 55vh;
   background-repeat: no-repeat no-repeat;
+}
+
+#carousel {
+  height: 75vh;
 }
