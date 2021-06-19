@@ -129,17 +129,22 @@ layout: default
 <!-- Use cases -->
 <section class="container-fluid pb-5 pt-5">
     <div class="carousel slide carousel-dark" id="carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            {% for item in site.data.carousel.slides %}
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %} active {% endif %}" aria-current="true" aria-label="Slide {{ forloop.index0 }}"></button>
+            {% endfor %}
+        </div>
         <div class="carousel-inner">
             {% for item in site.data.carousel.slides %}
-            <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background: url({{ item.bg | relative_url }}) repeat repeat 50% 50%; height: 75vh;">
+            <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}" style="background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url({{ item.bg | relative_url }}) repeat repeat 50% 50%; height: 75vh;">
                 <div class="position-absolute container top-50 start-50 translate-middle">
                     <div class="row">
-                        <div class="col-lg-6 d-flex flex-column justify-content-left">
-                            <h5>{{ item.title }}</h5>
-                            <p class="">{{ item.text }}</p>
-                            <a href="{{ item.link | relative_url }}" class="btn btn-secondary">{{ item.button }}</a>
+                        <div class="col-lg-7 d-flex flex-column justify-content-left">
+                            <h4 class="display-6 text-light">{{ item.title }}</h4>
+                            <p class="lead fs-5 text-light">{{ item.text }}</p>
+                            <a href="{{ item.link | relative_url }}" class="btn btn-dark btn-lg w-50 align-self-center">{{ item.button }}</a>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-5">
                             <img src="{{ item.image |  relative_url }}" alt="Image" class="img-fluid">
                         </div>
                     </div>
