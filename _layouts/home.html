@@ -127,7 +127,7 @@ layout: default
 </section>
 
 <!-- Use cases -->
-<section class="container-fluid pb-5 pt-5">
+<section class="container-fluid pb-5 pt-5" id="use">
     <div class="carousel slide carousel-dark" id="carousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
             {% for item in site.data.carousel.slides %}
@@ -141,8 +141,8 @@ layout: default
                     <div class="row">
                         <div class="col-lg-7 d-flex flex-column justify-content-left">
                             <h4 class="display-6 text-light">{{ item.title }}</h4>
-                            <p class="lead fs-5 text-light">{{ item.text }}</p>
-                            <a href="{{ item.link | relative_url }}" class="btn btn-dark btn-lg w-50 align-self-center">{{ item.button }}</a>
+                            <p class="lead fs-6 text-light">{{ item.text }}</p>
+                            {% unless item.button == "none" %}<a href="{{ item.link | relative_url }}" class="btn btn-dark btn-lg w-50 align-self-center">{{ item.button }}</a>{% endunless %}
                         </div>
                         <div class="col-lg-5">
                             <img src="{{ item.image |  relative_url }}" alt="Image" class="img-fluid">

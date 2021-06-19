@@ -12,3 +12,24 @@ slides:
     button: DISCOVER IT NOW
     link: https://www.internetofgoodthings.org/sections/gen2030-future-yours/
     bg: /assets/img/home_carousel/background2.jpg
+
+  - title: Providing Life-Saving Information during Emergencies with Internet of Good Things (IoGT)
+    text: In 2017, Internet of Good Things was used to provide emergency related information around epidemics, conflicts and natural disasters to 900,000 users in 33 countries and territories. IoGT supported UNICEF response to disease outbreaks in Angola (Cholera and Yellow fever), Benin (Lassa fever), Mozambique (Cholera), Nigeria (Cholera) and Latin America (Zika, Dengue and Chikungunya).
+    image: /assets/img/home_carousel/slide3.jpg
+    button: LEARN MORE
+    link: https://unicefstories.org/2018/04/10/iogtemergencies/
+    bg: /assets/img/home_carousel/background3.jpg
+
+  - title: UNICEF Angola using IoGT to promote healthy parenting with Mobile Network operator and Angola Ministry of Family
+    text: UNICEF Angola office has initiated discussions with the Ministry of Family to organize an event promoting the use of digital version of “A Receita da Felicidade” for all its partners. Previous to the launch of IoGT this booklet including health information for mothers and families was in a paper-only version. It is now freely accessible on any web enabled mobile in Angola.
+    image: /assets/img/home_carousel/slide4.png
+    button: none
+    link: none
+    bg: /assets/img/home_carousel/background4.jpg
+
+  - title: Ebola information campaign with Tanzania government and a mobile communication company using IoGT
+    text: In early 2015, Tanzania’s Government, UNICEF and Push Mobile, a mobile communication company providing SMS aggregation services across all the available mobile networks in Tanzania, sealed a partnership to reach over 10 million Tanzanian mobile users with life-saving information on Ebola. The information about Ebola provided through IoGT was used to reach millions of Tanzanians and was made freely accessible to those who usually cannot afford a connection.
+    image: /assets/img/home_carousel/slide5.jpg
+    button: none
+    link: none
+    bg: /assets/img/home_carousel/background5.jpg
