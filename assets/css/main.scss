@@ -11,15 +11,12 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  position: relative;
+  height: 100%;
 }
 
 .container:not(nav div.container) {
   max-width: 865px;
-}
-
-.section {
-  padding-top: 54px;
-  margin-top: -54px;
 }
 
 .iogt-logo {
@@ -62,4 +59,9 @@ body {
 
 #carousel {
   height: 75vh;
+}
+
+:target {
+  padding-top: 54px;
+  margin-top: -54px;
 }
